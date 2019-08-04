@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+
 <html>
 	<head>
 		<title>SamiAzar</title>
@@ -14,13 +15,13 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-wide.css" />
 			<link rel="stylesheet" href="css/style-noscript.css" />
+			<link rel="stylesheet" href="css/animate.min.css" />
 		</noscript>
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<div id="loadOverlay" style="background-color:#fff; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
 	</head>
 	<body class="loading">
-
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
@@ -28,16 +29,20 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>MohammadAmin Samiazar</h1>
+						<div class="sam-container">
+							<div id="sam1" class="sami-img">
+								<img src="img/1.jpg" alt="">
+							</div>
+						</div>
+
+						<h1 onmouseover="document.getElementById('sam1').style.opacity = '1';" onmouseout="document.getElementById('sam1').style.opacity = '0'">MohammadAmin Samiazar</h1>
 						<p>&nbsp;&bull;&nbsp; Android Developer &nbsp;&bull;&nbsp;</p>
 						<nav>
 							<ul>
 								<li><a href="https://www.linkedin.com/in/samiazar/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 								<li><a href="https://stackoverflow.com/users/7135845" class="icon fa-stack-overflow"><span class="label">StackOverFlow</span></a></li>
 								<li><a href="https://github.com/samiazar" class="icon fa-github"><span class="label">Github</span></a></li>
-
-								<li><a href="https://medium.com/@mohamadsamiazar" class="icon fa-maxcdn"><span class="label">Medium</span></a></li>
-
+								<li><a href="https://medium.com/@mohamadsamiazar" class="fa fa-medium"><span class="label">Medium</span></a></li>
 								<li><a href="https://twitter.com/MSamiAzar" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="mailto:mohamadsamiazar@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
