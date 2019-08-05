@@ -4,6 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 (function() {
 
 	skel.init({
@@ -22,6 +23,17 @@
 		// Remove "loading" class once the page has fully loaded.
 			window.onload = function() {
 				document.body.className = '';
+
+				var xhttp = new XMLHttpRequest();
+			    xhttp.onreadystatechange = function() {
+			         if (this.readyState == 4 && this.status == 200) {
+			             var myObj = JSON.parse(this.responseText);
+    					 document.getElementById("footer-content").innerHTML = JSON.stringify(myObj.contents.quotes[0].quote);
+			         }
+			    };
+			    xhttp.open("GET", "https://quotes.rest/qod");
+			    
+			    xhttp.send();
 			}
 
 		// Prevent scrolling on touch.
@@ -33,6 +45,8 @@
 			window.onorientationchange = function() {
 				document.body.scrollTop = 0;
 			}
+
+
 
 	/*
 
